@@ -1,0 +1,98 @@
+/*===== Center the Absolute Element Horizontally=====*/
+/*===== Center the Absolute Element Horizontally=====*/
+div{
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/*===== Center the Absolute Element Vertically=====*/
+/*===== Center the Absolute Element Vertically=====*/
+div{
+  position: fixed;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+/*=====Shadow inside the box  =====*/
+/*=====Shadow inside the box  =====*/
+div{
+    box-shadow:10px 10px 50px 20px pink inset;
+}
+
+
+/*=====  inline-block Fix not in one line problem =====*/
+/*=====  al divat mesh fe 5adt wa7ed lma b3ml inline-block =====*/
+div{    
+vertical-align:top;
+}
+
+
+
+
+
+
+/* Center the navbar and ConTroll BreakPoint */
+/* Center the navbar and ConTroll BreakPoint */
+
+/*     Center it  */
+/*     Center it  */
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none !important;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+ .navbar-nav .open .dropdown-menu {
+     position: static;
+     float: none;
+     width: auto;
+     margin-top: 0;
+     background-color: transparent;
+     border: 0;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+  }
+}
