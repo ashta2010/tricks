@@ -35,6 +35,31 @@ $('.container > div').height(maxh);
 //Check if Div have not another div
 //Check if Div have not another div
   $("div").not(':has(anotherDiv)').remove();
+  
+  
+  
+  
+  
+  //Filter without plugin
+  //Filter without plugin
+  $('.chos li').on('click', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+
+
+        if ($(this).data('showw') == 'all') {
+            $('.imgs .col-md-4').css("opacity", '1');
+
+        } else {
+            $('.imgs .col-md-4').css("opacity", '0.2');
+            $($(this).data('showw')).css("opacity", '1');
+        }
+
+});
+  
+  
+  
+  
+  
 
 
 
