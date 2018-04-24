@@ -3,8 +3,8 @@ $(function () {
   'use strict';
   
   
-  //auto-run Function
-  //auto-run Function
+  //Auto-run and Start Function
+  //Auto-run and Start Function
   (function () {
   }()); 
 
@@ -58,8 +58,21 @@ $('.container > div').height(maxh);
   
   
   
-  
-  
+  //Make footer under body in small html
+  if ($('body').height() < 900) {
+        console.log('the body is small');
+        $('body').css({
+            'min-height': '100%'
+        });
+
+        $('.footer').css({
+            position: "absolute",
+            right: 0,
+            bottom: 0,
+            left: 0,
+        });
+
+    }
 
 
 
