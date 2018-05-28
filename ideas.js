@@ -75,6 +75,22 @@ $('.container > div').height(maxh);
     }
 
 
+//Media Query with Jquery with resize
+//Media Query with Jquery with resize
+$(window).resize(function(){
+       if ($(window).width() <= 320) {  
+              // is mobile device
+       }     
+});
+  
+  
+//Media Query with Jquery on Reload
+//Media Query with Jquery on Reload
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        //...
+    } else {
+        //...
+    }
 
 
 
