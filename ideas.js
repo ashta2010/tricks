@@ -84,6 +84,7 @@ $(window).resize(function(){
 });
   
   
+  
 //Media Query with Jquery on Reload
 //Media Query with Jquery on Reload
     if (window.matchMedia('(max-width: 767px)').matches) {
@@ -108,4 +109,15 @@ $(window).resize(function(){
         return false;
     });
 
+  
+  //To Active The Navbar link of current page
+  //To Active The Navbar link of current page
+       var PageName = location.pathname.split('/').slice(-1)[0];
+        $('a[href*='+PageName+']').parent().addClass('active');
+  
+  
+  
+  
+  
+  
 }); //End Start Function
